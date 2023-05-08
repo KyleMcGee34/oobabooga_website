@@ -47,7 +47,7 @@ if st.button('Generate Text'):
         try:
             json_data = json.loads(response.text)
             result = json_data['results'][0]['text']
-            st.markdown(prompt + result)
+            st.markdown(result)
         except (json.JSONDecodeError, KeyError) as e:
             st.markdown(f"Error parsing response: {e}")
             st.markdown(response.text)
