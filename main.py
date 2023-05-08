@@ -9,6 +9,8 @@ headers = {
     'CF-Access-Client-Secret': st.secrets["clientSecret"]
 }
 
+prompt = "In order to make homemade bread, follow these steps:\n1)"
+
 request = {
     'prompt': prompt,
     'max_new_tokens': 250,
